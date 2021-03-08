@@ -25,5 +25,5 @@ npm install electron-packager --save-dev
 # For use from the CLI
 npm install electron-packager -g
 # if you have electron packager or you installed it, run build.bat or this:
-electron-packager . --overwrite --icon=NJSBI.ico --prune=false
+electron-packager . --overwrite --prune=true
 ```
