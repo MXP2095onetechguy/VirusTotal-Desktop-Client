@@ -1,4 +1,6 @@
-#VirusTotal Desktop Client
+# VirusTotal Desktop Client
+
+
 This is a desktop client for virustotal
 being that virustotal is cloud based, this will not work wihout internet connection
 
