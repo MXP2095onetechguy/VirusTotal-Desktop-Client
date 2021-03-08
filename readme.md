@@ -1,80 +1,27 @@
-# electron-boilerplate
+#VirusTotal Desktop Client
+This is a desktop client for virustotal
+being that virustotal is cloud based, this will not work wihout internet connection
 
-> Boilerplate to kickstart creating an app with [Electron](https://github.com/electron/electron)
+command to use:
 
-See [awesome-electron](https://github.com/sindresorhus/awesome-electron) for more useful Electron resources.
+```bash
+# Clone this repository
+git clone https://github.com/MXP2095onetechguy/VirusTotal-Desktop-Client.git
+# Go into the repository
+cd browser-demo
+# Install dependencies
+npm install
+# Run the app
+# with the npmstart.bat by running it
+# or if you dont have the scripts, run:
+npm start
+# build app
+# this step is needed if you don't have electron packager:
+# For use in npm scripts (recommended)
+npm install electron-packager --save-dev
 
-See [Caprine](https://github.com/sindresorhus/caprine) for a production app based on this boilerplate.
-
-## Features
-
-- [`electron-builder`](https://www.electron.build) fully set up to create cross-platform builds
-- [Builds the app on CI](https://www.electron.build/multi-platform-build.html)
-- [Silent auto-updates](https://www.electron.build/auto-update.html)
-- App menu that adheres to the system user interface guidelines
-- [Config handling](https://github.com/sindresorhus/electron-store)
-- [Context menu](https://github.com/sindresorhus/electron-context-menu)
-- [User-friendly handling of unhandled errors](https://github.com/sindresorhus/electron-unhandled)
-- Easily publish new versions to GitHub Releases
-- And much more!
-
-## Getting started
-
-**Click the "Use this template" button.**
-
-Alternatively, create a new directory and then run:
-
+# For use from the CLI
+npm install electron-packager -g
+# if you have electron packager or you installed it, run build.bat or this:
+electron-packager . --overwrite --icon=NJSBI.ico --prune=false
 ```
-$ curl -fsSL https://github.com/sindresorhus/electron-boilerplate/archive/main.tar.gz | tar -xz --strip-components 1
-```
-
-There's also a [Yeoman generator](https://github.com/sindresorhus/generator-electron).
-
----
-
-**Remove everything from here and above**
-
----
-
-# App Name
-
-> The best app ever
-
-## Install
-
-*macOS 10.10+, Linux, and Windows 7+ are supported (64-bit only).*
-
-**macOS**
-
-[**Download**](https://github.com/user/repo/releases/latest) the `.dmg` file.
-
-**Linux**
-
-[**Download**](https://github.com/user/repo/releases/latest) the `.AppImage` or `.deb` file.
-
-*The AppImage needs to be [made executable](http://discourse.appimage.org/t/how-to-make-an-appimage-executable/80) after download.*
-
-**Windows**
-
-[**Download**](https://github.com/user/repo/releases/latest) the `.exe` file.
-
----
-
-## Dev
-
-Built with [Electron](https://electronjs.org).
-
-### Run
-
-```
-$ npm install
-$ npm start
-```
-
-### Publish
-
-```
-$ npm run release
-```
-
-After Travis finishes building your app, open the release draft it created and click "Publish".
